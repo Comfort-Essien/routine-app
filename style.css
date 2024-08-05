@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container{
+    background: linear-gradient(#aab5cc, #4245f7, #079e71);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+   }
+
+   img{
+    flex: 1;
+     width: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+   }
+
+   h1{
+    font-size: 45px;
+    text-align: center;
+   }
+   .row{
+    background: white;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    }
+
+   input{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 0;
+    border-radius: 30px;
+       }
+
+   button{
+    font-size: medium;
+    border-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 80px;
+    cursor: pointer;
+    background: rgb(206, 196, 196);
+    border: 0;
+   }
+
+   ul li{
+    top: 40px;
+   padding: 10px;
+   left: 10px;
+   font-size: x-large;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+   }
+   
+   ul li::before{
+     content: "";
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     background: url(./circle.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 14px;
+     left: -25px;
+   }
+  
+   
+   button:hover{
+   background: #7258e9;
+   }
+
+   ul li.checked{
+    text-decoration: line-through;
+    color: #ce0707;
+   }
+
+   ul li.checked::before{
+    background-image: url(./check-mark.png);
+   }
+
+   span img{
+    position: absolute;
+    justify-content: center;
+    align-items: center; 
+    width: 40px;
+    right: 90px;
+    height: 30px;
+    text-align: center;
+    border-top-left-radius: 50px;
+}
+
+span img:hover{
+    background: rgb(143, 155, 139);
+}
+
+.editBtn{
+    left: 580px;
+}
